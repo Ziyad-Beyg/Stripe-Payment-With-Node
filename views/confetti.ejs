@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Completed</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      outline: none;
+    }
+    *::selection {
+      background-color: none;
+      color: black;
+    }
+  </style>
+  <body>
+    <h1>Payment Successfull</h1>
+  </body>
+  <script type="module">
+    import confetti from "https://cdn.skypack.dev/canvas-confetti";
+
+    confetti();
+    window.addEventListener("click", () => {
+      confetti();
+    });
+  </script>
+</html>
